@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StudyWithPatron.DAL.Models
 {
     [Table("Score_bombs")]
-    public class ScoreBombs 
+    public class ScoreBombs
     {
         [Column("id_user")]
         public Guid id_user { get; set; }

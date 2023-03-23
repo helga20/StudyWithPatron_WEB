@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StudyWithPatron.DAL.Repositories.Interface;
-using System;
-using System.Collections.Generic;
 //using System.Data.Entity;
-using System.Threading.Tasks;
 
 namespace StudyWithPatron.DAL.Repositories
 {
@@ -30,13 +27,14 @@ namespace StudyWithPatron.DAL.Repositories
 
         public Task<T> GetByIdAsync(int id)
         {
+            //return _dbSet.FindAsync(id);
             return _dbSet.FindAsync(id);
         }
 
         public void Create(T entity)
         {
             if (entity == null)
-            { 
+            {
                 throw new ArgumentNullException();
             }
 

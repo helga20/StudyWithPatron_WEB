@@ -1,9 +1,4 @@
-﻿using System;
-using System.Data;
-using System.Data.Common;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StudyWithPatron.DAL.Models;
 //using System.Data.Entity;
 

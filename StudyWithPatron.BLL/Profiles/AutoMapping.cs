@@ -4,7 +4,7 @@ using StudyWithPatron.DAL.Models;
 
 namespace StudyWithPatron.BLL.Profiles
 {
-    public class AutoMapping: Profile  
+    public class AutoMapping : Profile
     {
         public AutoMapping()
         {

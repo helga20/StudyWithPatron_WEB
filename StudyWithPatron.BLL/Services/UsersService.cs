@@ -1,24 +1,21 @@
 ﻿using AutoMapper;
+using StudyWithPatron.BLL.Models;
 using StudyWithPatron.BLL.Services.Interfaces;
-using StudyWithPatron.DAL.Models;
+using StudyWithPatron.DAL.Interface;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace StudyWithPatron.BLL.Services
 {
-    public class UsersService : BaseService, IGoodService
+    public class UsersService : BaseService, IUsersService
     {
         public UsersService(IUnitOfWork unitOfWork, IMapper mapper) : base(unitOfWork, mapper) { }
 
-        public async Task<IEnumerable<GoodDto>> GetGoods()
+        public async Task<IEnumerable<UsersDto>> GetUsers()
         {
-            var goods = await _unitOfWork.Goods.GetAllAsync();
+            var users = await _unitOfWork.Users.GetAllAsync();
 
-            return _mapper.Map<IEnumerable<GoodDto>>(goods);
+            return _mapper.Map<IEnumerable<UsersDto>>(users);
         }
     }
 }
-
-//C: \Users\Lenovo\source\repos\helga20\StudyWithPatron_WEB\StudyWithPatron.BLL\Services\Interfaces\
-
-//StudyWithPatron

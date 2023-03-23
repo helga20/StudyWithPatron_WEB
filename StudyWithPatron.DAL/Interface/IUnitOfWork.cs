@@ -1,7 +1,4 @@
-﻿using StudyWithPatron.DAL.Models;
-using StudyWithPatron.DAL;
-using System.Threading.Tasks;
-using StudyWithPatron.DAL.Repositories.Interface;
+﻿using StudyWithPatron.DAL.Repositories.Interface;
 
 namespace StudyWithPatron.DAL.Interface
 {
