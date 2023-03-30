@@ -1,0 +1,5 @@
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.AssemblyInfo.cs
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.csproj.CoreCompileInputs.cache
