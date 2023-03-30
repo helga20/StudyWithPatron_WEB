@@ -11,7 +11,7 @@ namespace StudyWithPatron.DAL.Models
     public class ScoreUsers
     {
         [Column("id_user")]
-        public Guid id_user { get; set; }
+        public int id_user { get; set; }
 
         [Column("score_user")]
         public int score_user { get; set; }

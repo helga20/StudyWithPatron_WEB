@@ -3,3 +3,12 @@ C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj
 C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.AssemblyInfoInputs.cache
 C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.AssemblyInfo.cs
 C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\bin\Debug\net6.0\StudyWithPatron.DAL.deps.json
+C:\Users\Lenovo\source\repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\bin\Debug\net6.0\StudyWithPatron.DAL.runtimeconfig.json
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\bin\Debug\net6.0\StudyWithPatron.DAL.dll
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\bin\Debug\net6.0\StudyWithPatron.DAL.pdb
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.dll
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\refint\StudyWithPatron.DAL.dll
+C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.pdb
+C:\Users\Lenovo\source\repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\StudyWithPatron.DAL.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\helga20\StudyWithPatron_WEB\StudyWithPatron.DAL\obj\Debug\net6.0\ref\StudyWithPatron.DAL.dll

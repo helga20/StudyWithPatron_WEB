@@ -12,7 +12,7 @@ namespace StudyWithPatron.DAL.Models
     public class ScoreBombs
     {
         [Column("id_user")]
-        public Guid id_user { get; set; }
+        public int id_user { get; set; }
 
         [Column("score_bomb")]
         public int score_bomb { get; set; }
