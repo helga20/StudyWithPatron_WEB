@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "B2qOWZAri7QjnLTzM+qq41RQGAJEFQy3x/iKjXp6Poo5l8QGrayKG3CQyfdCF26H3IoVFDtzahita254DnT/Cw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\Downloads\\StudyWithPatronWEB-master\\StudyWithPatronWEB-master\\StudyWithPatron.BLL\\StudyWithPatron.BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
