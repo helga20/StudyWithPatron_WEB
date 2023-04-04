@@ -1,8 +1,0 @@
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.AssemblyInfoInputs.cache
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.AssemblyInfo.cs
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.RazorAssemblyInfo.cache
-C:\Users\Lenovo\Source\Repos\helga20\StudyWithPatron_WEB\StudyWithPatron\obj\Debug\net6.0\StudyWithPatron.RazorAssemblyInfo.cs
