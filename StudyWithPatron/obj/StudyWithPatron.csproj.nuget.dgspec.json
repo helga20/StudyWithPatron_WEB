@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj": {}
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj": {}
   },
   "projects": {
-    "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj": {
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
         "projectName": "StudyWithPatron",
-        "projectPath": "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Навчання\\StudyWithPatron\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -67,6 +67,14 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.2.2, )"
             }
           },
           "imports": [

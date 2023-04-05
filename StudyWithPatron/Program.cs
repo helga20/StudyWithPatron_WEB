@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using StudyWithPatron;
+using Serilog;
+using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,6 +20,10 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Seq("http://localhost:8080")
+    .WriteTo.File("/logs.log").CreateLogger();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

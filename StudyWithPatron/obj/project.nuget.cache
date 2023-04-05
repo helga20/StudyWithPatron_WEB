@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bqXj6jCk/AE1+GAVa3d/W08mdrramFVMBBbiTvOxSWYW1V0g60FBNw+HK8rK5f1PZF1sbG6Sty3F73ZinNQGxg==",
+  "dgSpecHash": "WmwbanQlazHWieOPskDW+ZdzSsgj6F2+m/R4gVhJtZWZ3PNE0fq3m5XBzPF1qZ5YcJLpgVKgnXhLm3ITKSMHfQ==",
   "success": true,
-  "projectFilePath": "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
@@ -44,6 +44,11 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.3\\npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\serilog.formatting.compact\\1.1.0\\serilog.formatting.compact.1.1.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\serilog.sinks.periodicbatching\\3.1.0\\serilog.sinks.periodicbatching.3.1.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\serilog.sinks.seq\\5.2.2\\serilog.sinks.seq.5.2.2.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
