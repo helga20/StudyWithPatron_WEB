@@ -36,6 +36,7 @@
             font-style: Bradley Hand;
             text-align: center;
             /*font-weight: 600;*/
+            z-index: 1
         }
 
             .button2:hover {
@@ -51,6 +52,7 @@
                 font-style: Bradley Hand;
                 text-align: center;
                /* font-weight: 600;*/
+               z-index: 1
             }
 
     </style>
@@ -60,11 +62,22 @@
         <h1 class="display-4" style="color: white;"><strong>Навчання з Патроном</strong></h1>
         <h4 style="color: yellow; "> Грайся та розвивайся! </h4>
 
-        <img src="../../Images/patron1.png" alt="Зображення Патрона" style="margin: 0 auto; width:auto;" />
-       <!-- <button class="button button1">Green</button>-->
-        <button class="button button2">Почати гру</button>
+        <img src="~/Images/patron1.png" alt="Зображення Патрона" style="position: absolute; bottom: 10; left: 0; margin: 0; height: 60vh;  width:43.4vw;" />
+       
+       <!-- <button class="button button2">Почати гру</button>-->
+        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu">Почати гру</a>
+      
+
     </div>
-</body>
+
+  <!--  <div class="stack-panel">-->
+
+        <div class="border" style="width: 35vw; height: 5vh; transform: rotate(45deg); background-color: #39385d; margin-left: 50%; margin-top: 15%;border-radius: 20px;"></div>
+    <div class="border" style="width: 35vw; height: 5vh; transform: rotate(45deg); background-color: #1E90FF; margin-top: 15px; margin-left: 41%; border-radius: 20px;"></div>
+
+        <div class="border" style="width: 35vw; height: 5vh; transform: rotate(45deg); background-color: yellow; margin-top: -5px; margin-left: 50%; border-radius: 20px;"></div>
+ <!--   </div>-->
+    </body>
 </html>
 
 

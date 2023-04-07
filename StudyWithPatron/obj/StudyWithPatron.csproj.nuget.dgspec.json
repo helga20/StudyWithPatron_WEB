@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Source\\Repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Source\\Repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
         "projectName": "StudyWithPatron",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\StudyWithPatron_WEB\\StudyWithPatron\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\StudyWithPatron_WEB\\StudyWithPatron\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,6 +62,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
