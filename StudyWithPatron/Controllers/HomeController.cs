@@ -22,7 +22,11 @@ namespace StudyWithPatron.Controllers
         {
             return View();
         }
-        public IActionResult Index1()
+        public IActionResult AddSubt()
+        {
+            return View();
+        }
+        public IActionResult MultDiv()
         {
             return View();
         }
