@@ -15,20 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\StudyWithPatron_WEB\StudyWithPatron
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/AddSubt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRTdWJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/Index1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleDEuY3NodG1s
+[C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/MultDiv.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNdWx0RGl2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/Saper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYXBlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/source/repos/StudyWithPatron_WEB/StudyWithPatron/Views/Home/View.cshtml]
