@@ -59,7 +59,16 @@
                /* font-weight: 600;*/
                z-index: 1
             }
-
+            /*.fixed-window {
+            position: fixed;
+            top: 50px;
+            left: 20px; 
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #000;
+        }*/
     </style>
 </head>
 <body style="background-color:#181735">
@@ -69,30 +78,97 @@
         <img src="~/Images/Pes ok.png" alt="Зображення Патрона" style="position: absolute; bottom: 5%; left: 5%; margin: 0; height: 50vh;  width:23.4vw;" />
        
        <!-- <button class="button button2">Почати гру</button>-->
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 40%; top: 30%;">1</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 50%; top: 30%;" >2</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 60%; top: 30%;" >3</a>
+        <a class="button button2" id="btn1" OnClick="Button1_Click" style="left: 40%; top: 30%;">1</a>
+        <a class="button button2" id="btn2" OnClick="Button2_Click" style="left: 50%; top: 30%;">2</a>
+        <a class="button button2" id="btn3" OnClick="Button3_Click" style="left: 60%; top: 30%;">3</a>
 
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 40%; top: 45%;" >4</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 50%; top: 45%;" >5</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 60%; top: 45%;" >6</a>
+        <a class="button button2" id="btn4" OnClick="Button4_Click" style="left: 40%; top: 45%;">4</a>
+        <a class="button button2" id="btn5" OnClick="Button5_Click" style="left: 50%; top: 45%;">5</a>
+        <a class="button button2" id="btn6" OnClick="Button6_Click" style="left: 60%; top: 45%;">6</a>
 
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 40%; top: 60%;" >7</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 50%; top: 60%;" >8</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 60%; top: 60%;" >9</a>
+        <a class="button button2" id="btn7" OnClick="Button7_Click" style="left: 40%; top: 60%;">7</a>
+        <a class="button button2" id="btn8" OnClick="Button8_Click" style="left: 50%; top: 60%;">8</a>
+        <a class="button button2" id="btn9" OnClick="Button9_Click" style="left: 60%; top: 60%;">9</a>
 
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="left: 50%; top: 75%;" >0</a>
+        <a class="button button2" id="btn0" OnClick="Button0_Click" style="left: 50%; top: 75%;">0</a>
 
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;" >Перевірити</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;" >Наступний рівень</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Menu" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: #1E90FF;" >Очистити</a>
+        <a class="button button2" id="btn_check" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
+        <a class="button button2" id="btn_next" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Наступний рівень</a>
+        <a class="button button2" id="btn_clear" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: #1E90FF;">Очистити</a>
       
         <label for="example" style="color: yellow; font-size: 45px;">1 + 2 =</label>
-        <input type="text" id="myInput" name="example" value="" style="color: #008CBA; width: 250px; height: 50px; top: 20%;"><br><br>
-       <!-- <input type="text" id="myInput" name="myInput" value="">-->
+        <input type="text" id="example" name="example" style="color: #008CBA; width: 250px; height: 50px; top: 20%;"><br><br>
+        <!-- <input type="text" id="myInput" name="myInput" value="">-->
       
     </div>
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+        var btn6 = document.getElementById("btn6");
+        var btn7 = document.getElementById("btn7");
+        var btn8 = document.getElementById("btn8");
+        var btn9 = document.getElementById("btn9");
+        var btn10 = document.getElementById("btn10");
+        var btn_clear = document.getElementById("btn_clear");
+        var btn_check = document.getElementById("btn_check");
+        var btn_next = document.getElementById("btn_next");
 
+        btn1.addEventListener("click", function () {
+            document.getElementById("example").value += "1";
+        });
+
+        btn2.addEventListener("click", function () {
+            document.getElementById("example").value += "2";
+        });
+
+        btn3.addEventListener("click", function () {
+            document.getElementById("example").value += "3";
+        });
+
+        btn4.addEventListener("click", function () {
+            document.getElementById("example").value += "4";
+        });
+
+        btn5.addEventListener("click", function () {
+            document.getElementById("example").value += "5";
+        });
+
+        btn6.addEventListener("click", function () {
+            document.getElementById("example").value += "6";
+        });
+
+        btn7.addEventListener("click", function () {
+            document.getElementById("example").value += "7";
+        });
+
+        btn8.addEventListener("click", function () {
+            document.getElementById("example").value += "8";
+        });
+
+        btn9.addEventListener("click", function () {
+            document.getElementById("example").value += "9";
+        });
+
+        btn0.addEventListener("click", function () {
+            document.getElementById("example").value += "0";
+        });
+
+        btn_clear.addEventListener("click", function () {
+            document.getElementById("example").value = "";
+        });
+
+        btn_check.addEventListener("click", function () {
+            document.getElementById("example").value = "";
+        });
+
+        btn_next.addEventListener("click", function () {
+            document.getElementById("example").value = "";
+        });
+
+    </script>
     </body>
 
 </html>
