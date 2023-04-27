@@ -77,7 +77,6 @@
 
         <img src="~/Images/Pes ok.png" alt="Зображення Патрона" style="position: absolute; bottom: 5%; left: 5%; margin: 0; height: 50vh;  width:23.4vw;" />
        
-       <!-- <button class="button button2">Почати гру</button>-->
         <a class="button button2" id="btn1" OnClick="Button1_Click" style="left: 40%; top: 30%;">1</a>
         <a class="button button2" id="btn2" OnClick="Button2_Click" style="left: 50%; top: 30%;">2</a>
         <a class="button button2" id="btn3" OnClick="Button3_Click" style="left: 60%; top: 30%;">3</a>
@@ -92,13 +91,13 @@
 
         <a class="button button2" id="btn0" OnClick="Button0_Click" style="left: 50%; top: 75%;">0</a>
 
+        <a class="button button2" id="btn_start" style="top: 45%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Почати</a>
         <a class="button button2" id="btn_check" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
         <a class="button button2" id="btn_next" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Наступний рівень</a>
         <a class="button button2" id="btn_clear" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: #1E90FF;">Очистити</a>
-      
+
         <label for="example" style="color: yellow; font-size: 45px;">1 + 2 =</label>
         <input type="text" id="example" name="example" style="color: #008CBA; width: 250px; height: 50px; top: 20%;"><br><br>
-        <!-- <input type="text" id="myInput" name="myInput" value="">-->
       
     </div>
     <script>
@@ -115,6 +114,7 @@
         var btn_clear = document.getElementById("btn_clear");
         var btn_check = document.getElementById("btn_check");
         var btn_next = document.getElementById("btn_next");
+        var btn_start = document.getElementById("btn_start");
 
         btn1.addEventListener("click", function () {
             document.getElementById("example").value += "1";
@@ -165,6 +165,10 @@
         });
 
         btn_next.addEventListener("click", function () {
+            document.getElementById("example").value = "";
+        });
+
+        btn_start.addEventListener("click", function () {
             document.getElementById("example").value = "";
         });
 

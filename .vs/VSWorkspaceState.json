@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StudyWithPatron",
+    "\\StudyWithPatron\\Views",
+    "\\StudyWithPatron\\Views\\Home"
   ],
-  "SelectedNode": "\\StudyWithPatron.sln",
+  "SelectedNode": "\\StudyWithPatron\\Views\\Home\\Saper.cshtml",
   "PreviewInSolutionExplorer": false
 }
