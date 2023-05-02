@@ -25,7 +25,7 @@
             cursor: pointer;
         }
 
-       
+
         .button2 {
             background-color: #0000CD;
             color: yellow;
@@ -52,21 +52,20 @@
                 height: 10%;
                 border-radius: 5px;
                 font-size: 200%;
-                font-weight: 600
-                font-style: Verdana;
+                font-weight: 600 font-style: Verdana;
                 text-align: center;
                 z-index: 1
             }
         /*.fixed-window {
-                    position: fixed;
-                    top: 50px;
-                    left: 20px;
-                    width: 200px;
-                    height: 100px;
-                    background-color: #f0f0f0;
-                    padding: 20px;
-                    border: 1px solid #000;
-                }*/
+                            position: fixed;
+                            top: 50px;
+                            left: 20px;
+                            width: 200px;
+                            height: 100px;
+                            background-color: #f0f0f0;
+                            padding: 20px;
+                            border: 1px solid #000;
+                        }*/
     </style>
 </head>
 <body style="background-color:#181735">
@@ -74,8 +73,8 @@
         <h1 class="display-4" style="color: white;"><strong>Множення і ділення</strong></h1>
 
         <img src="~/Images/sticker.png" alt="Зображення Патрона" style="position: absolute; bottom: 10%; left: 5%; margin: 0; height: 50vh;  width:23.4vw;" />
-       
-       <!-- <button class="button button2">Почати гру</button>-->
+
+        <!-- <button class="button button2">Почати гру</button>-->
         <a class="button button2" id="btn1" OnClick="Button1_Click" style="left: 40%; top: 30%;">1</a>
         <a class="button button2" id="btn2" OnClick="Button2_Click" style="left: 50%; top: 30%;">2</a>
         <a class="button button2" id="btn3" OnClick="Button3_Click" style="left: 60%; top: 30%;">3</a>
@@ -90,12 +89,17 @@
 
         <a class="button button2" id="btn0" OnClick="Button0_Click" style="left: 50%; top: 75%;">0</a>
 
-        <a class="button button2" id="btn_start" style="top: 45%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Почати</a>
-        <a class="button button2" id="btn_check" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
-        <a class="button button2" id="btn_next" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Наступний рівень</a>
+        <a class="button button2" id="btn_start" OnClick="myGeeks()" style=" top: 45%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Приклад</a>
+
+        <a class="button button2" id="btn_check" OnClick="myGeeks2()" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
+        <a class="button button2" id="btn_next" OnClick="myGeeksNext()" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Складніший приклад</a>
         <a class="button button2" id="btn_clear" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: #1E90FF;">Очистити</a>
 
-        <label for="example" style="color: yellow; font-size: 45px;">1 + 2 =</label>
+        <label for="example" id="number1" style="color: yellow; font-size: 45px;">1</label>
+        <label for="example" id="plus_minus" style="color: yellow; font-size: 45px;">*</label>
+        <label for="example" id="number2" style="color: yellow; font-size: 45px;">2</label>
+
+        <label for="eqw" style="color: yellow; font-size: 45px;"> = </label>
         <input type="text" id="example" name="example" style="color: #008CBA; width: 250px; height: 50px; top: 20%;"><br><br>
     </div>
     <script>
@@ -112,6 +116,7 @@
         var btn_clear = document.getElementById("btn_clear");
         var btn_check = document.getElementById("btn_check");
         var btn_next = document.getElementById("btn_next");
+        var btn_start = document.getElementById("btn_start");
 
         btn1.addEventListener("click", function () {
             document.getElementById("example").value += "1";
@@ -157,14 +162,81 @@
             document.getElementById("example").value = "";
         });
 
-        btn_check.addEventListener("click", function () {
-            document.getElementById("example").value = "";
+        btn_next.addEventListener("click", function () {
+            level = 2;
+            myGeeksNext();
         });
 
-        btn_next.addEventListener("click", function () {
-            document.getElementById("example").value = "";
+        btn_start.addEventListener("click", function () {
+            level = 1;
+            myGeeks();
         });
+
+        var x = document.getElementById("number1");
+        var y = document.getElementById("number2");
+        var pm = document.getElementById("plus_minus");
+        var level = 1;
+
+        function myGeeks() {
+            if (level === 1) {
+                x.innerHTML = Math.floor(Math.random() * 11);
+                y.innerHTML = Math.floor(Math.random() * 11);
+            } else {
+                x.innerHTML = Math.floor(Math.random() * 91) + 10;
+                y.innerHTML = Math.floor(Math.random() * 91) + 10;
+            }
+
+            pm.innerHTML = Math.random() < 0.5 ? "*" : "/";
+
+            if (pm.innerHTML === "/") {
+                do {
+                    if (level === 1) {
+                        x.innerHTML = Math.floor(Math.random() * 11);
+                        y.innerHTML = Math.floor(Math.random() * 11);
+                    } else {
+                        x.innerHTML = Math.floor(Math.random() * 91) + 10;
+                        y.innerHTML = Math.floor(Math.random() * 91) + 10;
+                    }
+                } while (parseInt(x.innerHTML) % parseInt(y.innerHTML) !== 0 || parseInt(x.innerHTML) <= 0 || parseInt(x.innerHTML) < parseInt(y.innerHTML));
+            }
+        }
+
+        function myGeeksNext() {
+            level = 2;
+            x.innerHTML = Math.floor(Math.random() * 91) + 10;
+            y.innerHTML = Math.floor(Math.random() * 91) + 10;
+            pm.innerHTML = Math.random() < 0.5 ? "*" : "/";
+
+            if (pm.innerHTML === "/") {
+                do {
+                    x.innerHTML = Math.floor(Math.random() * 91) + 10;
+                    y.innerHTML = Math.floor(Math.random() * 91) + 10;
+                } while (parseInt(x.innerHTML) % parseInt(y.innerHTML) !== 0 || parseInt(x.innerHTML) <= 0 || parseInt(x.innerHTML) < parseInt(y.innerHTML));
+            }
+        }
+
+        function myGeeks2() {
+            var expression = pm.innerHTML === "*" ? parseInt(x.innerHTML) * parseInt(y.innerHTML) : parseInt(x.innerHTML) / parseInt(y.innerHTML);
+            var input = parseInt(document.getElementById("example").value);
+
+            if (expression === input) {
+                alert("Correct!");
+                myGeeks();
+                myGeeks_clear();
+
+                if (level === 2) {
+                    myGeeksNext();
+                }
+            } else {
+                alert("Incorrect!");
+                myGeeks_clear();
+            }
+        }
+
+        function myGeeks_clear() {
+            var input = document.getElementById("example").value = "";
+        }
 
     </script>
-    </body>
+</body>
 </html>

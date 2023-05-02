@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HTcnbtJtq0FiAr+rguDmBsjGTYL4eoiNdZNGs74BIfP1kAGfixjIdaDvxuTrsKA+T4tlqw2M7RfmlOXbUcCeyw==",
+  "dgSpecHash": "mF9o6LbnJbdJ4QPogB/+8wbhV/QNGbJIrM3mU3PI4F5TGrejrnAk63fCxJY25fky9tkpMbS0u9SjPVBfarDpBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\StudyWithPatron_WEB\\StudyWithPatron\\StudyWithPatron.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
