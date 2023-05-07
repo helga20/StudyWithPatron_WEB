@@ -91,18 +91,17 @@
         <a class="button button2" id="btn0" OnClick="Button0_Click" style="left: 50%; top: 75%;">0</a>
 
 
-        <a class="button button2" id="btn_start" OnClick="myGeeks()" style=" top: 45%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Приклад</a>
-
-        <a class="button button2" id="btn_check" OnClick="myGeeks2()" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
-        <a class="button button2" id="btn_next" OnClick="myGeeksNext()" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Складніший приклад</a>
-        <a class="button button2" id="btn_clear" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: #1E90FF;">Очистити</a>
+        <a class="button button2" id="btn_start" OnClick="easyLevel()" style=" top: 45%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Приклад</a>
+        <a class="button button2" id="btn_check" OnClick="check_example()" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
+        <a class="button button2" id="btn_next" OnClick="nextLevel()" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Складніший приклад</a>
+        <a class="button button2" id="btn_clear" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: yellow;">Очистити</a>
 
         <label for="example" id="number1" style="color: yellow; font-size: 45px;">1</label>
         <label for="example" id="plus_minus" style="color: yellow; font-size: 45px;">+</label>
         <label for="example" id="number2" style="color: yellow; font-size: 45px;">2</label>
 
         <label for="eqw" style="color: yellow; font-size: 45px;"> = </label>
-        <input type="text" id="example" name="example" style="color: #008CBA; width: 250px; height: 50px; top: 20%;"><br><br>
+        <input type="text" id="example" name="example" style="color: #181735; width: 250px; height: 50px; top: 20%; font-size: 40px;"><br><br>
     </div>
     <script>
         var btn1 = document.getElementById("btn1");
@@ -166,12 +165,12 @@
 
         btn_next.addEventListener("click", function () {
             level = 2;
-            myGeeksNext();
+            nextLevel();
         });
 
         btn_start.addEventListener("click", function () {
             level = 1;
-            myGeeks();
+            easyLevel();
         });
 
         var x = document.getElementById("number1");
@@ -179,13 +178,13 @@
         var pm = document.getElementById("plus_minus");
         var level = 1;
 
-        function myGeeks() {
+        function easyLevel() {
             if (level === 1) {
                 x.innerHTML = Math.floor(Math.random() * 11);
                 y.innerHTML = Math.floor(Math.random() * 11);
             } else {
-                x.innerHTML = Math.floor(Math.random() * 91) + 10;
-                y.innerHTML = Math.floor(Math.random() * 91) + 10;
+                x.innerHTML = Math.floor(Math.random() * 41) + 10;
+                y.innerHTML = Math.floor(Math.random() * 41) + 10;
             }
 
             pm.innerHTML = Math.random() < 0.5 ? "+" : "-";
@@ -196,42 +195,42 @@
                         x.innerHTML = Math.floor(Math.random() * 11);
                         y.innerHTML = Math.floor(Math.random() * 11);
                     } else {
-                        x.innerHTML = Math.floor(Math.random() * 91) + 10;
-                        y.innerHTML = Math.floor(Math.random() * 91) + 10;
+                        x.innerHTML = Math.floor(Math.random() * 41) + 10;
+                        y.innerHTML = Math.floor(Math.random() * 41) + 10;
                     }
                 } while (parseInt(x.innerHTML) % parseInt(y.innerHTML) !== 0 || parseInt(x.innerHTML) <= 0 || parseInt(x.innerHTML) < parseInt(y.innerHTML));
             }
         }
 
-        function myGeeksNext() {
+        function nextLevel() {
             level = 2;
-            x.innerHTML = Math.floor(Math.random() * 91) + 10;
-            y.innerHTML = Math.floor(Math.random() * 91) + 10;
+            x.innerHTML = Math.floor(Math.random() * 41) + 10;
+            y.innerHTML = Math.floor(Math.random() * 41) + 10;
             pm.innerHTML = Math.random() < 0.5 ? "+" : "-";
 
             if (pm.innerHTML === "-") {
                 do {
-                    x.innerHTML = Math.floor(Math.random() * 91) + 10;
-                    y.innerHTML = Math.floor(Math.random() * 91) + 10;
+                    x.innerHTML = Math.floor(Math.random() * 41) + 10;
+                    y.innerHTML = Math.floor(Math.random() * 41) + 10;
                 } while (parseInt(x.innerHTML) % parseInt(y.innerHTML) !== 0 || parseInt(x.innerHTML) <= 0 || parseInt(x.innerHTML) < parseInt(y.innerHTML));
             }
         }
 
-        function myGeeks2() {
+        function check_example() {
             var expression = parseInt(x.innerHTML) + (pm.innerHTML === "+" ? parseInt(y.innerHTML) : -parseInt(y.innerHTML));
             var input = parseInt(document.getElementById("example").value);
 
             if (expression === input) {
                 alert("Correct!");
-                myGeeks();
-                myGeeks_clear();
+                easyLevel();
+                my_clear();
             } else {
                 alert("Incorrect!");
-                myGeeks_clear();
+                my_clear();
             }
         }
 
-        function myGeeks_clear() {
+        function my_clear() {
             var input = document.getElementById("example").value = "";
         }
 
