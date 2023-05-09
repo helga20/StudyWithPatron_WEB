@@ -9,6 +9,8 @@
   <ItemGroup>
     <None Include="wwwroot\Images\patron1.jpg" />
     <None Include="wwwroot\Images\patron1.png" />
+    <None Include="wwwroot\Sounds\sound1.mp3" />
+    <None Include="wwwroot\Sounds\ПесПатрон.mp3" />
   </ItemGroup>
 
   <ItemGroup>

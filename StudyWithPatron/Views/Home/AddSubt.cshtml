@@ -63,24 +63,24 @@
 
         <img src="~/Images/Pes ok.png" alt="Зображення Патрона" style="position: absolute; bottom: 5%; left: 5%; margin: 0; height: 50vh;  width:23.4vw;" />
 
-        <a class="button button2" id="btn1" OnClick="Button1_Click" style="left: 40%; top: 30%;">1</a>
-        <a class="button button2" id="btn2" OnClick="Button2_Click" style="left: 50%; top: 30%;">2</a>
-        <a class="button button2" id="btn3" OnClick="Button3_Click" style="left: 60%; top: 30%;">3</a>
+        <a class="button button2" id="btn1" OnClick="playSong()" style="left: 40%; top: 30%;">1</a>
+        <a class="button button2" id="btn2" OnClick="playSong()" style="left: 50%; top: 30%;">2</a>
+        <a class="button button2" id="btn3" OnClick="playSong()" style="left: 60%; top: 30%;">3</a>
 
-        <a class="button button2" id="btn4" OnClick="Button4_Click" style="left: 40%; top: 45%;">4</a>
-        <a class="button button2" id="btn5" OnClick="Button5_Click" style="left: 50%; top: 45%;">5</a>
-        <a class="button button2" id="btn6" OnClick="Button6_Click" style="left: 60%; top: 45%;">6</a>
+        <a class="button button2" id="btn4" OnClick="playSong()" style="left: 40%; top: 45%;">4</a>
+        <a class="button button2" id="btn5" OnClick="playSong()" style="left: 50%; top: 45%;">5</a>
+        <a class="button button2" id="btn6" OnClick="playSong()" style="left: 60%; top: 45%;">6</a>
 
-        <a class="button button2" id="btn7" OnClick="Button7_Click" style="left: 40%; top: 60%;">7</a>
-        <a class="button button2" id="btn8" OnClick="Button8_Click" style="left: 50%; top: 60%;">8</a>
-        <a class="button button2" id="btn9" OnClick="Button9_Click" style="left: 60%; top: 60%;">9</a>
+        <a class="button button2" id="btn7" OnClick="playSong()" style="left: 40%; top: 60%;">7</a>
+        <a class="button button2" id="btn8" OnClick="playSong()" style="left: 50%; top: 60%;">8</a>
+        <a class="button button2" id="btn9" OnClick="playSong()" style="left: 60%; top: 60%;">9</a>
 
-        <a class="button button2" id="btn0" OnClick="Button0_Click" style="left: 50%; top: 75%;">0</a>
+        <a class="button button2" id="btn0" OnClick="playSong()" style="left: 50%; top: 75%;">0</a>
 
-        <a class="button button2" id="btn_start" OnClick="easyLevel()" style=" top: 45%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Приклад</a>
-        <a class="button button2" id="btn_check" OnClick="check_example()" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
-        <a class="button button2" id="btn_next" OnClick="nextLevel()" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Складніший приклад</a>
-        <a class="button button2" id="btn_clear" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: yellow;">Очистити</a>
+        <a class="button button2" id="btn_start" OnClick="easyLevel(); playSong();" style=" top: 45%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Приклад</a>
+        <a class="button button2" id="btn_check" OnClick="check_example(); playSongCheck()" style="top: 60%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Перевірити</a>
+        <a class="button button2" id="btn_next" OnClick="nextLevel(); playSong();" style="top: 75%; left: 70%; width: 25%; background-color:yellow; color: #008CBA;">Складніший приклад</a>
+        <a class="button button2" id="btn_clear" OnClick="playSongClear()" style="top: 20%; left: 70%; width: 15%; background-color:#008CBA; color: yellow;">Очистити</a>
 
         <label for="example" id="number1" style="color: yellow; font-size: 45px;">1</label>
         <label for="example" id="plus_minus" style="color: yellow; font-size: 45px;">+</label>
@@ -88,8 +88,43 @@
 
         <label for="eqw" style="color: yellow; font-size: 45px;"> = </label>
         <input type="text" id="example" name="example" style="color: #181735; width: 250px; height: 50px; top: 20%; font-size: 40px;"><br><br>
+
+        <audio id="song_ButtonNumbers">
+            <source src="/Sounds/sound1.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="song_Clear">
+            <source src="/Sounds/clear.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="song_Check">
+            <source src="/Sounds/check.mp3" type="audio/mpeg">
+        </audio>
+
+
     </div>
+
     <script>
+
+        function playSong() {
+            var song = document.getElementById("song_ButtonNumbers");
+            song.play();
+        }
+
+        function playSongClear() {
+            var song = document.getElementById("song_Clear");
+            song.play();
+        }
+
+        function playSongCheck() {
+            var song = document.getElementById("song_Check");
+            song.play();
+        }
+
+        function pauseSong() {
+            song.pause();
+        }
+
         var btn1 = document.getElementById("btn1");
         var btn2 = document.getElementById("btn2");
         var btn3 = document.getElementById("btn3");

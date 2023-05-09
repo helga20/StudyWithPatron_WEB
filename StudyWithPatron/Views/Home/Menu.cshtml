@@ -22,7 +22,6 @@
             cursor: pointer;
         }
 
-
         .button2 {
             background-color: #0000CD;
             color: yellow;
@@ -35,10 +34,9 @@
             font-size: 200%;
             font-style: Bradley Hand;
             text-align: center;
-            /*font-weight: 600;*/
         }
 
-            .button2:hover {
+        .button2:hover {
                 background-color: #008CBA;
                 color: yellow;
                 position: absolute;
@@ -50,8 +48,7 @@
                 font-size: 200%;
                 font-style: Bradley Hand;
                 text-align: center;
-                /* font-weight: 600;*/
-            }
+        }
 
     </style>
 </head>
@@ -62,13 +59,26 @@
 
         <img src="~/Images/sticker2.png" alt="Зображення Патрона" style="position: absolute; bottom: 10%; left: 10%; margin: 0 auto; width:auto;" />
 
-        <!-- <button class="button button2">Почати гру</button>-->
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="AddSubt" style="top: 30%;">Додавання і віднімання</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="MultDiv" style="top: 50%;">Множення і ділення</a>
-        <a class="button button2" asp-area="" asp-controller="Home" asp-action="Registration" style="top: 70%;">Гра "Сапер"</a>
-        
-        
+        <a class="button button2" id="btn_addsub" OnClick="playSong()" asp-action="AddSubt" style="top: 30%;">Додавання і віднімання</a>
+        <a class="button button2" id="btn_multdiv" OnClick="playSong()" asp-action="MultDiv" style="top: 50%;">Множення і ділення</a>
+        <a class="button button2" id="btn_saper" OnClick="playSong()" asp-action="Registration" style="top: 70%;">Гра "Сапер"</a>
 
+        <audio id="song_Buttons">
+            <source src="/Sounds/sound1.mp3" type="audio/mpeg">
+        </audio>
+       
     </div>
+    <script>
+
+        function playSong() {
+            var song = document.getElementById("song_Buttons");
+            song.play();
+        }
+
+        function pauseSong() {
+                song.pause();
+        }
+
+    </script>
 </body>
 </html>
