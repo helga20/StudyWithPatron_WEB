@@ -13,7 +13,8 @@ namespace StudyWithPatron
 
         public DbSet<Users> User { get; set; }
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
+            : base(options) { }
 
     }
 
